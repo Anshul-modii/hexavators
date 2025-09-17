@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhaar Seeding & DBT Awareness Portal</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-900">
+
+    <header class="bg-white/80 backdrop-blur-lg fixed w-full z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Aadhaar Aware
+            </a>
+            <div class="hidden md:flex space-x-8 items-center" id="desktop-menu">
+                <a href="#importance" class="text-gray-600 hover:text-blue-600 transition font-medium">Why it Matters</a>
+                <a href="#checker" class="text-gray-600 hover:text-blue-600 transition font-medium">Status Checker</a>
+                <a href="#tutorial" class="text-gray-600 hover:text-blue-600 transition font-medium">Tutorials</a>
+                <a href="#quiz" class="text-gray-600 hover:text-blue-600 transition font-medium">Quiz Zone</a>
+                <a href="#faq" class="text-gray-600 hover:text-blue-600 transition font-medium">FAQ</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex flex-col space-y-2">
+             <a href="#importance" class="block py-2 text-gray-600 hover:text-blue-600 transition nav-link">Why it Matters</a>
+             <a href="#checker" class="block py-2 text-gray-600 hover:text-blue-600 transition nav-link">Status Checker</a>
+             <a href="#tutorial" class="block py-2 text-gray-600 hover:text-blue-600 transition nav-link">Tutorials</a>
+             <a href="#quiz" class="block py-2 text-gray-600 hover:text-blue-600 transition nav-link">Quiz Zone</a>
+             <a href="#faq" class="block py-2 text-gray-600 hover:text-blue-600 transition nav-link">FAQ</a>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <section class="hero-gradient relative overflow-hidden">
+            <div id="particles-js"></div>
+            <div class="container mx-auto px-6 py-28 text-center hero-content">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight mb-4">
+                    From Linking to Receiving:
+                    <br class="hidden md:block">
+                    <span class="text-blue-600">Mastering Aadhaar & DBT for Your Benefits</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+                    This portal clarifies the crucial difference between simple Aadhaar Seeding and a DBT-enabled account, empowering students and citizens to receive government benefits seamlessly.
+                </p>
+                <a href="#importance" class="btn-primary text-white font-bold py-3 px-8 rounded-full inline-flex items-center">
+                    Learn the Difference
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-5 w-5"><line x1="12" x2="12" y1="5" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="importance" class="py-24 bg-white reveal">
+            </section>
+
+        <section id="checker" class="py-24 bg-slate-100 reveal">
+            </section>
+
+        <section id="tutorial" class="py-24 bg-white reveal">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">How to Get it Done: A Simple Guide</h2>
+                    <p class="text-gray-600 mt-3 max-w-2xl mx-auto">Follow these official methods to link your Aadhaar and enable DBT.</p>
+                </div>
+                <div class="max-w-4xl mx-auto" id="tutorial-list">
+                    <div class="border-b">
+                        <button class="accordion-header w-full text-left py-5 px-6 flex justify-between items-center text-lg font-semibold hover:bg-gray-50">
+                            <span>Video Guide: Linking Aadhaar & Enabling DBT</span>
+                            <span class="accordion-icon transition-transform duration-300 h-5 w-5 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+                        </button>
+                        <div class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-6">
+                            <div class="py-4 text-gray-600">
+                                <p class='mb-4 text-gray-700'>Watch this step-by-step video guide to understand the complete process from start to finish.</p>
+                                <div class='video-container my-4'>
+                                    <video controls preload="metadata" class="w-full h-full">
+                                        <source src="video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="py-24 bg-slate-100 reveal">
+            </section>
+        
+        <section id="faq" class="py-24 bg-white reveal">
+            </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
